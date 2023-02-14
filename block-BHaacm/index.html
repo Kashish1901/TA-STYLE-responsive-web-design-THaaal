@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Assignment 1-Responsive Web Design</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
+        <!--css--> 
+        <link rel="stylesheet" href="stylesheet/style.css"/>
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/b5e6e39f18.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container flex item-center column">
+                <img class="brand" src="assets/logo.png" alt="brand-logo"/>
+                <div class="nav">
+                    <ul class="flex item-center">
+                        <li>
+                            <a href="#">home</a>
+                        </li>
+                        <li>
+                            <a class="active" href="#blog-link">blog</a>
+                        </li>
+                        <li>
+                            <a href="#">about</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="container flex item-center padding">
+                    <div class="flex-48 full-width content">
+                        <h2>What is Lorem Ipsum ?</h2>
+                        <p>
+                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+
+“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                        <a  class="btn" href="#">Read More</a>
+                    </div>
+                    <div class="flex-48 full-width ">
+                        <img  src="assets/01.png" alt="hero-img"/>
+                    </div>
+                </div>
+            </section>
+            <section class="blog" id="blog-link">
+                <h1>Our Blog</h1>
+                <div class="container flex item-center article padding">
+                    <article class="flex-30">
+                        <img class="full-width" src="assets/02.png" alt="blog-img"/>
+                        <h2>Why do we use it?</h2>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</p>
+                        <a  class="btn" href="#">Read More</a>
+                        </article>
+                        <article class="flex-30">
+                            <img class="full-width" src="assets/03.png" alt="blog-img"/>
+                            <h2>Where does it come from?</h2>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin</p>
+                            <a  class="btn" href="#">Read More</a>
+                            </article>
+                            <article class="flex-30">
+                                <img class="full-width" src="assets/04.png" alt="blog-img"/>
+                                <h2>Where can I get some?</h2>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                <a  class="btn" href="#">Read More</a>
+                                </article>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container flex item-center column">
+                <small>&copy; AltCampus</small>
+                <nav>
+                    <a><i class="fa-brands fa-square-facebook"></i></a>
+                    <a><i class="fa-brands fa-square-twitter"></i></a>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>
