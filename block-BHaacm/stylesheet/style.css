@@ -155,9 +155,7 @@ h1{
 }
 /* Media Queries */
 @media screen and (max-width: 768px){
-	body{
-		background-color: turquoise;
-	}
+	
 	.header{
 		display: block;
 	}
@@ -170,6 +168,9 @@ h1{
 	.flex{
 		
         flex-wrap: wrap;
+	}
+	.order-1{
+		order: 1;
 	}
 	.flex-48 ,
 	.flex-30{
