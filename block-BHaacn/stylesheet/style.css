@@ -78,8 +78,16 @@ body{
 .align-center{
     align-items: center;
 }
+.column{
+   flex-wrap: wrap;
+    flex-direction: column;
+
+}
 .padding{
     padding: 32px 0;
+}
+.flex-10{
+    flex: 0 1 10%;
 }
 .flex-20{
     flex: 0 1 20%;
@@ -93,6 +101,12 @@ body{
 }
 .flex-50{
     flex: 0 1 50%;
+}
+.flex-60{
+    flex: 0 1 60%;
+}
+.flex-70{
+    flex: 0 1 70%;
 }
 .full-width{
     width: 100%;
@@ -143,7 +157,7 @@ p{
 /* navbar */
 .nav-bar{
     z-index: 56;
-    position: relative;
+   position: relative;
 }
 
 .nav-item{
@@ -158,12 +172,13 @@ p{
 }
 /* Hero */
 .hero{
-    background: url(../assets/banner.png) no-repeat;
+    background: linear-gradient( transparent , rgba(54,35,166) 90%), url(../assets/banner.png) 50% 50% no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    bottom: 3rem;
 }
 h1{
     font-size: 2.3rem;
@@ -181,15 +196,10 @@ h1{
     color: white;
     padding: 1.5rem 0;
 }
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 12;
-    background-color: rgba(54,44,179,0.6);
+.hero img{
+    width: 100%;
 }
+
 /* About */
 .about{
     margin-top: 30rem;
@@ -223,7 +233,40 @@ h4{
     background-color: var(--bgcolor);
     left: 1.5rem;
 }
-
+/* schedule */
+.schedule h2{
+    text-align: center;
+}
+.circle{
+    background-color: var(--primary);
+    color: white;
+    font-size: 1.rem;
+    padding: 0.5rem 0;
+    border-radius: 50%;
+    margin-bottom: 2rem ;
+    width: 3.5rem;
+    height: 3.5rem;
+   text-align: center;
+}
+.circle-white{
+    background-color: white;
+    color: var(--primary);
+    border: 0.1rem dashed var(--primary);
+}
+.line{
+    width: 4rem;
+    border: 0.1rem dashed var(--primary);
+    color: var(--primary);
+}
+.schedule img{
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+.schedule .btn{
+    margin-left: 33rem;
+    margin-top: 6rem;
+}
 /* sponsor */
 .sponsor{
     background-color: var(--bgcolor);
@@ -257,26 +300,10 @@ h5{
 .banner{
     text-align: center;
 }
-.banner img{
-    width: 80%;
-    padding: 32px;
-    position: relative;
-    border-radius: 2rem;
-    z-index: 21;
-}
-.play{
-    color: var(--primary);
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    margin-top: 15rem;
-    z-index: 198;
-    font-size: 1.2rem;
-    width: 3.2rem;
-    height: 3.2rem;
-    background-color: white;
-    padding: 22px;
-    border-radius: 50%;
+.banner iframe{
+    width: 100%;
+   
+    padding: 2.5rem;
 }
 /* News */
 .news h2{
@@ -334,7 +361,6 @@ h5{
         margin: 0 auto;
         padding: 0 32px;
     }
-    
     .column{
        flex-direction: column;
     }
