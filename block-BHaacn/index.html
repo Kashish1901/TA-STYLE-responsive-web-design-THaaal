@@ -14,13 +14,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="header">
-            <div class="container padding">
-                <nav class="nav-bar flex align-center">
-             <h3 class="brand">
+        <header class="header nav-bar">
+            <div class="container  flex align-center padding">
+                <a class="brand" href="index.html">
+             <h3>
               Alt Events
              </h3>
-               <ul class="nav-menu flex">
+             </a>
+             <label class="bars" for="toggle">
+                <i class="fa-solid fa-bars"></i>
+             </label>
+             <input id="toggle" type="checkbox">
+             <nav class="nav">
+               <ul class="nav-menu flex small-col">
                 <li class="nav-item">
                     <a href="#">home</a>
                 </li>
@@ -42,9 +48,9 @@
         </header>
         <main>
             <!--Hero-->
-            <section class="hero">
+            <section class="hero padding">
                 <div class="container extra-padding flex align-center hero-content">
-                    <article class="flex-50">
+                    <article class="flex-50 order-1">
                      <h1>Web Developer <br>
                         Conference <strong>2020</strong></h1>
                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
@@ -60,10 +66,10 @@
             <!--About-->
             <section class="about padding">
                 <div class="container flex align-center">
-                    <figure>
+                    <figure class="flex-40 width-full">
                         <img src="assets/about.png" alt="about-img"/>
                     </figure>
-                    <div class="flex-50">
+                    <div class="flex-60">
                         <h2>
                             About the event
                         </h2>
@@ -77,17 +83,26 @@
                 <h2>Why You Should Join</h2>
                 <div class="container flex align-center">
                    <div class="flex-30 dashed">
-                    <span class="number">1</span>
+                    <div class="number">
+                        <span>1</span>
+                    </div>
+                   
                     <h4>Network</h4>
                     <p>Lorem ipsum, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scramb</p>
                    </div>
                    <div class="flex-30 dashed">
-                    <span class="number">2</span>
+                    <div class="number">
+                        <span>2</span>
+                    </div>
+                   
                     <h4>Great Speakers</h4>
                     <p>Lorem ipsum, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scramb</p>
                    </div>
                    <div class="flex-30 dashed">
-                    <span class="number">3</span>
+                    <div class="number">
+                        <span>3</span>
+                    </div>
+                   
                     <h4>Information</h4>
                     <p>Lorem ipsum, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scramb</p>
                    </div>
@@ -97,76 +112,70 @@
             <!--schedule-->
             <section class="schedule padding">
                 <h2>Schedule</h2>
-                <div class="container flex padding ">
-                    <div class="flex-10 flex column">
-                        <div class="circle">06 <br>sep</div>
-                        <div class="line"></div>
-                        <div class="circle circle-white">07 <br>sep</div>
-                        <div class="line"></div>
-                        <div class="circle circle-white">08 <br>sep</div>
-                        <div class="line"></div>
-                        <div class="circle circle-white">09 <br>sep</div>
+                <div class="container padding">
+                    <div class="flex align-center">
+                        <div class=" center circle circle-bg flex-15 ">06 <br>sep</div>
+                        <figure class="flex-20 width-full">
+                            <img src="assets/schedule-01.jpg" alt="schedule-1"/>
+                        </figure>
+                        <article class="flex-60">
+                            <h4>Digital World Event Conversation</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </article>
                     </div>
-                    <div class="flex-70">
-                        <div class="flex">
-                            <figure class="flex-20 width-full">
-                                <img src="assets/schedule-01.jpg" alt="schedule-1"/>
-                            </figure>
-                             <article class="flex-60">
-                                <h4>Digital World Event Conversation</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        </article>
-                        </div>
-                        <div class="flex">
-                            <figure class="flex-20 width-full">
-                                <img src="assets/schedule-02.jpg" alt="schedule-2"/>
-                            </figure>
-                             <article class="flex-60">
-                                <h4>Web Designing Conversation</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        </article>
-                        </div>
-                        <div class="flex">
-                            <figure class="flex-20 width-full">
-                                <img src="assets/schedule-03.jpg" alt="schedule-3"/>
-                            </figure>
-                             <article class="flex-60">
-                                <h4>Web Development Conversation</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        </article>
-                        </div>
-                        <div class="flex">
-                            <figure class="flex-20 width-full">
-                                <img src="assets/schedule-04.jpg" alt="schedule-4"/>
-                            </figure>
-                             <article class="flex-60">
-                                <h4>Digital Marketing Conference</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        </article>
-                        </div>
-                        </div>
+                    <div class="flex align-center">
+                        <div class="circle center flex-15">07 <br>sep</div>
+                        <figure class="flex-20 width-full">
+                            <img src="assets/schedule-02.jpg" alt="schedule-2"/>
+                        </figure>
+                        <article class="flex-60">
+                            <h4>Web Designing Conversation</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </article>
+                    </div>
+                    <div class="flex align-center">
+                        <div class="circle flex-15 center">08 <br>sep</div>
+                        <figure class="flex-20 width-full">
+                            <img src="assets/schedule-03.jpg" alt="schedule-3"/>
+                        </figure>
+                        <article class="flex-60">
+                            <h4>Web Development Conversation</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </article>
+                    </div>
+                    <div class="flex align-center">
+                        <div class="circle center flex-15 last-item">09 <br>sep</div>
+                    <figure class="flex-20 width-full">
+                        <img src="assets/schedule-04.jpg" alt="schedule-4"/>
+                    </figure>
+                    <article class="flex-60">
+                        <h4>Digital Marketing Conference</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </article>
                 </div>
+            </div>
                 <a class="btn" href="#">Download Schedule</a>
+                
             </section>
             <!--Sponsor-->
             <section class="sponsor padding">
                 <div class="container flex align-center">
-                   <div class="flex-20 box">
+                   <div class="flex-20 box sm-flex sm-align-center">
                     <img src="assets/speaker.png" alt="speaker"/>
                     <span>20+</span>
                     <h5>GreatSpeaker</h5>
                    </div>
-                   <div class="flex-20 active box">
+                   <div class="flex-20 active box sm-flex sm-align-center">
                     <img src="assets/idea.png" alt="bulb"/>
                     <span>50+</span>
                     <h5>Total Topic</h5>
                    </div>
-                   <div class="flex-20  box">
+                   <div class="flex-20 box sm-flex sm-align-center">
                     <img src="assets/participants.png" alt="participants"/>
                     <span>300+</span>
                     <h5>Partcipants</h5>
                    </div>
-                   <div class="flex-20  box">
+                   <div class="flex-20 box sm-flex sm-align-center">
                     <img src="assets/sponsor.png" alt="sponsor"/>
                     <span>20+</span>
                     <h5>Sponsors</h5>
@@ -205,8 +214,8 @@
         <!--footer-->
         <footer class="footer">
             <div class="top">
-            <div class="container flex align-center padding light">
-                <figure>
+            <div class="container flex align-center padding light small-col small-center">
+                <figure class="flex-20">
                     <img src="assets/footer-logo.png" alt="logo"/>
                 </figure>
                <div class="flex-40">
@@ -226,7 +235,7 @@
                     </li>
                 </ul>
                 </div>
-                <div class="flex-20">
+                <div class="flex-30">
                     <h5>Follow Us</h5>
                     <div class="footer-nav">
                         <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
